@@ -10,8 +10,8 @@ public class Expenses {
 		for (int i = 1; i < expenses.length; i++) {
 			prefixSum[i] = prefixSum[i - 1] + expenses[i];
 		}
-		int sum = prefixSum[2] - prefixSum[0];
+		int sum = prefixSum[2];
 		
-		System.out.println("Total Sum = $" + sum);
+		System.out.println("Total Sum = ₹" + sum);
 	}
 }
